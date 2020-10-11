@@ -54,6 +54,23 @@ The parameter epsilon is reduced over time from 1 to 0.05. The fraction paramete
 ##### Observations Epsilon
 When Epsilon is bigger, the surroundings are explored more. The plots show that in this case the algorithm can learn a lot faster. For example, the model with an epsilon twice as large reaches the very good value of more than -10 after only 60 seconds, but after that the algorithm often makes wrong decisions (more random decisions) and the reward decreases. In the long run the parameter is probably better as in the baseline, but if good results should be achieved as fast as possible, then the epsilon can be increased slightly.
 
+#### Update Frequency of Q-Values
+By default the Q-Values are updated every 4 iterations. The Replay Buffer is read out and the parameters are updated accordingly. In the following, the influence of other update frequencies are examined.
+
+**Increasing the Update Frequency** (from 4 to 2)
+| Average Return | Average Discounted Return | Average Error |
+|----------------|---------------------------|---------------|
+|<img alt="Average Return Increased Update Frequency" src="/plots/q_update_freq_2/average_return.png" width="500">|<img alt="Average Discounted Return Increased Update Frequency" src="/plots/q_update_freq_2/average_discounted_return.png" width="500">|<img alt="Average Error Increased Update Frequency" src="/plots/q_update_freq_2/average_error.png" width="500">|
+
+**Decreasing the Update Frequency** (decreased from 4 to 6)
+| Average Return | Average Discounted Return | Average Error |
+|----------------|---------------------------|---------------|
+|<img alt="Average Return Decreased Update Frequency" src="/plots/q_update_freq_6/average_return.png" width="500">|<img alt="Average Discounted Return Decreased Update Frequency" src="/plots/q_update_freq_6/average_discounted_return.png" width="500">|<img alt="Average Error Decreased Update Frequency" src="/plots/q_update_freq_6/average_error.png" width="500">|
+
+##### Observations Update Frequency Q-Values
+With a lower update frequency, it takes longer in the beginning until Reward increases. Over a longer period of time, however, better results are achieved. This could be due to the fact that wrong decisions have less influence. So it might be useful to reduce the update frequency of the Q-Values.
+
+
 ## Other labs
 - [https://github.com/sagerpascal/deep-rl-bootcamp-lab01](https://github.com/sagerpascal/deep-rl-bootcamp-lab01)
 - [https://github.com/sagerpascal/deep-rl-bootcamp-lab2](https://github.com/sagerpascal/deep-rl-bootcamp-lab2)
