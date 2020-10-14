@@ -74,4 +74,4 @@ With a lower update frequency, it takes longer in the beginning until Reward inc
 ## Other labs
 - [https://github.com/sagerpascal/deep-rl-bootcamp-lab01](https://github.com/sagerpascal/deep-rl-bootcamp-lab01)
 - [https://github.com/sagerpascal/deep-rl-bootcamp-lab2](https://github.com/sagerpascal/deep-rl-bootcamp-lab2)
-- [https://github.com/sagerpascal/deep-rl-bootcamp-lab4](https://github.com/sagerpascal/deep-rl-bootcamp-lab2)
+- [https://github.com/sagerpascal/deep-rl-bootcamp-lab4](https://github.com/sagerpascal/deep-rl-bootcamp-lab4)
